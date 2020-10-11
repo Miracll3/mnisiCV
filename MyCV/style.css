@@ -146,6 +146,79 @@ a {
     left: 10%;
 }
 
+/*Home section*/
+.trivia{
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    background: hsla(0, 2%, 10%, 0.486);
+    text-align: center;
+    left: 500px;
+    position: relative;
+    color: black;
+    top: 100px;
+}
+.flip-card-front{
+    background: white;
+}
+.flip-card-back{
+    transform: rotateY(180deg);
+}
+.flip-card-front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip-card-inner{
+transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.trivia:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+#hero .contain{
+    width: 23%;
+    position: relative;
+    top: -150px;
+    z-index: 1;
+    left: 1060px;
+}
+#hero .card{
+    border-radius: 50px;
+    background: transparent;
+    box-shadow: 5px 5px 10px #191b1b, -5px -5px 10px rgb(212, 44, 44);
+    padding: 3%;
+    text-align: center;
+    color: white;
+}
+#hero .card h6{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 5px;
+}
+#hero .card h2{
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+#hero img#icon{
+    width: 20%;
+}
+#hero .card:hover{
+    color: hsl(0, 2%, 10%);
+    background: rgb(212, 44, 44);
+    transition: 1s;
+} 
+
 
 #hero {
     background-image: url(./img/Dark.jpg);
@@ -520,6 +593,18 @@ a {
  }
 
 /*Contact section*/
+#contact .mapholder{
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    top: -30px;
+    box-shadow: 0px 0px 18px 0 #00002c;
+    transition: .3s;
+}
+#contact .mapholder:hover{
+    box-shadow: 0px 0px 5px 0 #00002c;
+    transition: .3s;
+}
 #contact .contact{
     flex-direction: column;
     max-width: 1200px;
@@ -652,6 +737,14 @@ a {
         
     }
 
+    #hero .contain{
+        width: 30%;
+        position: relative;
+        top: -100px;
+        z-index: 1;
+        left: 40px;
+    }
+
     /*Skill section
     #services .service-bottom {
         
@@ -680,6 +773,17 @@ a {
     }
 
     /*About section*/
+    .trivia{
+        width: 300px;
+        height: 200px;
+        border-radius: 30px;
+        background: hsla(0, 2%, 10%, 0.486);
+        text-align: center;
+        left: 300px;
+        position: relative;
+        color: black;
+        top: 100px;
+    }
     #about .about{
         flex-direction: row;
     }
@@ -736,6 +840,7 @@ a {
         margin: 20px;
         flex-direction: row;
     }
+    
     #contact .contact-item .icon{
         height: 100px;
         width: 100px;
@@ -782,6 +887,13 @@ a {
     #hero{
         background-size: 55% 100%;
     }
+    #hero .contain{
+        width: 23%;
+        position: relative;
+        top: -150px;
+        z-index: 1;
+        left: 1050px;
+    }
     
     
 }
@@ -793,6 +905,27 @@ a {
         width:253px;
         height:351px;
      }
+     #hero .contain{
+        width: 45%;
+        position: relative;
+        top: -150px;
+        z-index: 1;
+        left: 20px;
+    }
+    .trivia{
+        width: 300px;
+        height: 200px;
+        border-radius: 30px;
+        background: hsla(0, 2%, 10%, 0.486);
+        text-align: center;
+        left: 150px;
+        position: relative;
+        color: black;
+        top: -60px;
+    }
+    #contact .contact{
+        
+    }
     
 }
 .test{

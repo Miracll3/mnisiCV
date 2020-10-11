@@ -38,6 +38,14 @@
         <a href="#about" type="button" class="cta">About</a>
       </div>
     </div>
+    <div class="contain">
+      <div class="card">
+        <h2><img src="./img/icons8-marker-50.png" style="width:25px;height:25px;"><span id="location"></span></h2>
+        <h6 id="weather"></h6>
+        <img src="" id="icon">
+        <h2><span id="temp"></span></h2>
+      </div>
+    </div>
   </section>
 
 
@@ -50,6 +58,17 @@
         </div>
       </div>
       <div class="col-right">
+        <div class="trivia">
+          <h2>Did You Know?(click)</h2>
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="https://img.icons8.com/ios/100/000000/question.png">
+            </div>
+            <div class="flip-card-back">
+              <p id="number" style="font-weight: 400px;"></p>
+            </div>
+        </div>
+        </div>
         <h1 class="section-title">About <span>me</span></h1>
         <h2>BSc IT student</h2>
         <p>Gender: Male</p>
@@ -58,7 +77,7 @@
           SiSwati</p>
           <p>I am passionate person who is always eager to learn new technologies to improve my skills and further
           develop my career.</p>
-          <a href="#" class="cta">Download CV</a>
+          <a href="./file/Mnisi SS.pdf" class="cta">Download CV</a>
       </div>
     </div>
   </section>
@@ -141,7 +160,7 @@
       </div>
     </section>
   
-  <!--Contact secrion-->
+  <!--Contact section-->
   <section id="contact">
     <div class="contact container">
       <div><h1 class="section-title">Contact <span>info</span></h1></div>
@@ -164,10 +183,12 @@
               <div class="icon"><img src="https://img.icons8.com/ios/50/000000/address.png"/></div>
               <div class="contact-info">
                 <h1>Address</h1>
-                <h2> Mpumalanga, Mpuluzi 2335</h2>
+                <h2>424 Thabo Mbeki Rd, Potchefstroom, 2520</h2>
             </div>
         </div>
+       
       </div>
+      <div class="mapholder" id="map"></div>
     </div>
   </section>
 
@@ -178,13 +199,13 @@
       <h2>Simplified Web Solutions</h2>
       <div class="social-icon">
         <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/ios/50/000000/linkedin.png"/></a>
+          <a href='https://www.linkedin.com/in/surprisemnisi-a84903189' ><img src="https://img.icons8.com/ios/50/000000/linkedin.png"/></a>
         </div>
         <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/ios/50/000000/instagram.png"/></a>
+          <a href='https://www.instagram.com/miracl3mnicy?rnametag'><img src="https://img.icons8.com/ios/50/000000/instagram.png"/></a>
         </div>
         <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/ios/50/000000/twitter-squared.png"/></a>
+          <a href='https://twitter.com/Miracle53711124?s=09'><img src="https://img.icons8.com/ios/50/000000/twitter-squared.png"/></a>
         </div>
       </div>
       <p> Copyright © 2020 Simanga Mnisi. All rights reserved.</p>
@@ -193,6 +214,7 @@
 
 
   <script src="./app.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBadI4A3j-_5X8MkhSj1pgDD8w31PvYXBk&callback=initMap&libraries=&v=weekly"></script>
   <!--app-root></app-root-->
 </body>
 </html>
