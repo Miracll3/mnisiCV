@@ -600,6 +600,7 @@ transition: transform 0.6s;
     top: -30px;
     box-shadow: 0px 0px 18px 0 #00002c;
     transition: .3s;
+    margin:20px;
 }
 #contact .mapholder:hover{
     box-shadow: 0px 0px 5px 0 #00002c;
