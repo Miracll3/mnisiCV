@@ -65,8 +65,8 @@ const factDiv = document.querySelector('.trivia p');
 form.addEventListener('click', (e)=>{
     e.preventDefault();
     const num = Math.floor(Math.random() * 301);
-    const loadText='Wait a little bit⌛';
-    factDiv.innerHTML=loadText;
+    const loadText = 'Wait a little bit⌛';
+    factDiv.innerHTML = loadText;
     const baseURL= 'https://cors-anywhere.herokuapp.com/http://numbersapi.com/';
     fetch(baseURL+num,{
         method: "GET",
